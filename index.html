@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You the Biggest Mitski Fan?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffc0cb; /* Pink background */
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #ff69b4; /* Pink button color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        /* Reduce size of last two images */
+        #result img {
+            max-width: 250px; /* Adjust this value as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW5uNjJ0bHZxYnd1MnU4Z3Fib3diaHl2MXFvbG82NHZ6ZzFncmExOCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/KDYzFUfUHJkyRC4FtQ/giphy.gif" alt="Cat with a rose">
+    <h2>Is Avrie the prettiest / best fortnite player and biggest fiona apple fan? </h2>
+    <button class="button" onclick="yes()">Yes</button>
+    <button class="button" onclick="no()">No</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    function yes() {
+        var resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = "<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXR4bmc0b3U1bDhhdnJrdzVydnVsOG9sdDRibXFrZjgxY3B5cTByZyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/wIUQQ07BHzDry/giphy.gif' alt='Dancing Cat'><p>FUCK YA SHE IS!</p>";
+    }
+
+    function no() {
+        var resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = "<img src='https://media.giphy.com/media/SeRLmsLiQYhL4G3TYm/giphy.gif?cid=790b7611jl4at9uy0r4imu8ogg6kzu2s6h78h7eakqzbl4k0&ep=v1_stickers_search&rid=giphy.gif&ct=s' alt='Sad Cat'><p>Im sorry you're wrong! Please try again.</p>";
+    }
+</script>
+
+</body>
+</html>
